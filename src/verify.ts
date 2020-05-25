@@ -8,7 +8,7 @@ import {
 import {
   ContractJson,
   getMetadata
-} from './contracts';
+} from './contract';
 
 export interface VerificationResult {
   verified: boolean

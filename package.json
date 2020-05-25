@@ -1,9 +1,8 @@
 {
   "name": "@compound-finance/etherscan",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "main": "dist/etherscan.js",
+  "license": "MIT",
   "types": "dist/etherscan.d.ts",
   "files": [
     "dist/**"
@@ -16,6 +15,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "web3-utils": "^1.2.8"
   }
 }
