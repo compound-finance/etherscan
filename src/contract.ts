@@ -74,6 +74,11 @@ export interface ContractJson {
   metadata: string | Metadata
 }
 
+export interface BuildFile {
+  contracts: {[file: string]: ContractJson}
+  version?: string
+}
+
 export function getMetadata(contractJson: ContractJson): Metadata {
   if (!contractJson.hasOwnProperty('metadata')) {
     throw new Error(`Verification requires contract JSON with metadata, keys: ${JSON.stringify(Object.keys(contractJson))}`);
