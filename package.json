@@ -1,6 +1,6 @@
 {
   "name": "@compound-finance/etherscan",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/etherscan.js",
   "license": "MIT",
   "types": "dist/etherscan.d.ts",
