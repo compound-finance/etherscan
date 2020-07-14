@@ -57,7 +57,7 @@ async function getContractCreationCode(network: string, address: string, constru
     throw new Error('Failed to pull deployed contract code from Etherscan');
   }
   let verifiedBytecode = verifiedByteCodeMatches[0][1];
-  if (!verifiedBytecode.endsWith(constructorArgs)) {
+  if (!verifiedBytecode.toLowerCase().endsWith(constructorArgs.toLowerCase())) {
     throw new Error("Expected verified bytecode to end with constructor args, but did not: ${JSON.stringify({verifiedBytecode, constructorArgs})}");
   }
 
