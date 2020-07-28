@@ -23,7 +23,7 @@ interface EtherscanSource {
   SwarmSource: string
 }
 
-async function getEtherscanApiData(network: string, address: string, apikey: string) {
+export async function getEtherscanApiData(network: string, address: string, apikey: string) {
   let apiUrl = await getEtherscanApiUrl(network);
   let result: Result = <Result>await get(apiUrl, { module: 'contract', action: 'getsourcecode', address, apikey });
 

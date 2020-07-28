@@ -1,3 +1,3 @@
 
 export { verifyContract } from './verify';
-export { importContract } from './import';
+export { importContract, getEtherscanApiData } from './import';
